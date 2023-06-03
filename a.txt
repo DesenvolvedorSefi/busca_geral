@@ -1,0 +1,67 @@
+//*[@id="u_0_a4_2Q"]
+/html/body/div[1]/div/div[4]/div/div/div/div/div[2]/div/div[3]/div[2]/div
+/html/body/div[1]/div/div[4]/div/div/div/div/div[2]/div/div[3]/div[2]/div
+/html/body/div[1]/div/div[4]/div/div/div/div/div/div[3]/div/div[3]/div[2]
+/html/body/div[1]/div/div[4]/div/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[2]
+/html/body/div[1]/div/div[1]/div/div[3]/div/div/div/div[1]/div[1]/div[2]/div/div/div/div/div/div[2]/div/div[2]/div/div[1]/div/div[1]/div[3]/div/div/div/span
+/html/body/div[1]/div/div[1]/div/div[3]/div/div/div/div[1]/div[1]/div[2]/div/div/div/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div[1]/div[5]/div/div[2]/div[4]/div/div/div[2]/span
+CREATE TABLE nova_tabela_carro_olx LIKE carro_olx;
+INSERT INTO nova_tabela_carro_olx SELECT * FROM carro_olx;
+ALTER TABLE carro_olx DROP PRIMARY KEY;
+ALTER TABLE nova_tabela_carro_olx MODIFY COLUMN indice INT NULL;
+ALTER TABLE nova_tabela_carro_olx AUTO_INCREMENT = 1;
+ALTER TABLE nova_tabela_carro_olx MODIFY COLUMN indice INT AUTO_INCREMENT;
+ALTER TABLE nova_tabela_carro_olx MODIFY COLUMN indice INT AUTO_INCREMENT;
+UPDATE portaldados SET origem = 'HUGO';
+DELETE FROM portaldados.fgts
+WHERE ID NOT IN (
+    SELECT MIN(ID) FROM portaldados.fgts GROUP BY CPF2
+);
+
+DELETE FROM portaldados.fgts
+WHERE id NOT IN (
+    SELECT MIN(id) FROM portaldados.fgts GROUP BY CPF2
+);
+{ "value": { "error": "unknown command", "message": "Unable to find handler for (GET) \u002fwd\u002fhub\u002fstatic\u002fresource\u002fhub.html", "stacktrace": "" } }
+CREATE TABLE INSS (
+    nb INT,
+    nome_segurado VARCHAR(100),
+    dt_nascimento DATE,
+    IDADE INT,
+    nu_CPF VARCHAR(11),
+    esp VARCHAR(50),
+    dib DATE,
+    ddb DATE,
+    vl_beneficio DECIMAL(10, 2),
+    id_banco_pagto INT,
+    id_agencia_banco INT,
+    id_orgao_pagador INT,
+    nu_conta_corrente VARCHAR(20),
+    aps_benef VARCHAR(50),
+    cs_meio_pagto VARCHAR(50),
+    id_banco_empres INT,
+    id_contrato_empres INT,
+    vl_empres DECIMAL(10, 2),
+    comp_ini_desconto DATE,
+    comp_fim_desconto DATE,
+    quant_parcelas INT,
+    vl_parcela DECIMAL(10, 2),
+    tipo_empres VARCHAR(50),
+    endereco VARCHAR(100),
+    bairro VARCHAR(50),
+    municipio VARCHAR(50),
+    uf VARCHAR(2),
+    cep VARCHAR(8),
+    situacao_empres VARCHAR(50),
+    dt_averbacao_consig DATE,
+    FONE1 VARCHAR(15),
+    FONE2 VARCHAR(15),
+    FONE3 VARCHAR(15),
+    FONE4 VARCHAR(15),
+    SOMA_PARC DECIMAL(10, 2),
+    NOVO_BENEFICIO VARCHAR(50),
+    MARGEM DECIMAL(10, 2)
+);
+id 	nb 	nome_segurado 	dt_nascimento 	IDADE 	nu_CPF 	esp 	dib 	ddb 	vl_beneficio 	id_banco_pagto 	id_agencia_banco 	id_orgao_pagador 	nu_conta_corrente 	aps_benef 	cs_meio_pagto 	id_banco_empres 	id_contrato_empres 	vl_empres 	comp_ini_desconto 	comp_fim_desconto 	quant_parcelas 	vl_parcela 	tipo_empres 	endereco 	bairro 	municipio 	uf 	cep 	situacao_empres 	dt_averbacao_consig 	FONE1 	FONE2 	FONE3 	FONE4 	SOMA_PARC 	NOVO_BENEFICIO 	MARGEM 	
+Query results operations
+
